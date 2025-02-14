@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * @brief Convert a decimal number to a binary string.
@@ -36,7 +35,7 @@ int main() {
   FILE* f = fopen("file.txt", "w");
   if (f == NULL) {
     printf("Error opening file\n");
-    exit(1);
+    return(1);
   }
 
   fprintf(f, "x1[8]     x2[8]     co s[8]\n");
